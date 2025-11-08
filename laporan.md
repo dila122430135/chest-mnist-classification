@@ -24,7 +24,7 @@ Setelah menjalankannya saya memperoleh hasil Val Acc pada sekitaran nilai 79.82%
 # 3. Mencoba Membuat Model ResNet dengan beberapa variasi hyperparameter yang berbeda-beda
 Pada tahap ini, saya melakukan pengembangan dengan mengganti arsitektur dasar SimpleCNN menjadi arsitektur ResNet18 untuk mengevaluasi peningkatan performa model terhadap dataset yang sama. Tujuannya adalah untuk melihat apakah penggunaan residual learning dapat membantu model mengatasi masalah vanishing gradient serta meningkatkan akurasi pada proses pelatihan dan validasi.
 
-Lalu selanjutnya saya mencoba model resnet dengan 3 variasi hyperparameter yang masing masing menghasilkan nilai Val Acc yang berbeda beda. Seluruh file ini diberi nama "train_baru" 'train_baru_2.py' "train_baru_3".
+Lalu selanjutnya saya mencoba model resnet dengan 3 variasi hyperparameter yang masing masing menghasilkan nilai Val Acc yang berbeda beda. Seluruh file ini diberi nama `train_baru.py` `train_baru_2.py` `train_baru_3.py`.
 
 ### Hyperparameter train_baru
 - EPOCHS = 16
@@ -70,6 +70,7 @@ Selain mengganti arsitektur, saya juga melakukan beberapa variasi *hyperparamete
     → Hasil *Val Acc* tertinggi sebesar *87.21%*, memperlihatkan bahwa dengan jumlah *epoch* yang lebih banyak, model mampu mempelajari fitur dengan lebih mendalam tanpa mengalami overfitting, terutama karena lapisan awal tetap dibekukan selama beberapa *epoch* pertama untuk menjaga stabilitas pelatihan.
 
 Secara keseluruhan, eksperimen ini menunjukkan bahwa *DenseNet* dengan *pretrained weights* memberikan hasil yang kompetitif dan bahkan melampaui performa *ResNet18* pada konfigurasi terbaik. Arsitektur yang padat dan efisien dalam memanfaatkan fitur antar-lapisan menjadikannya salah satu kandidat kuat untuk model klasifikasi citra medis yang memerlukan detail fitur tinggi.
+
 
 
 
