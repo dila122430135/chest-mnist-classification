@@ -59,7 +59,7 @@ Hyperparameter train_densenet
 - LEARNING_RATE = 2e-4
 - PRETRAINED = True
 - FREEZE_BACKBONE_EPOCHS = 2
-    → Hasil *Val Acc* sebesar *86.87%*, menunjukkan bahwa penggunaan *pretrained weights* membantu mempercepat konvergensi dan meningkatkan performa model dibandingkan pelatihan dari awal.
+    → Hasil *Val Acc* sebesar *85.87%*, menunjukkan bahwa penggunaan *pretrained weights* membantu mempercepat konvergensi dan meningkatkan performa model dibandingkan pelatihan dari awal.
 
 Hyperparameter train_densenet_2
 - EPOCHS = 30`
@@ -67,7 +67,8 @@ Hyperparameter train_densenet_2
 - LEARNING_RATE = 2e-4`
 - PRETRAINED = True`
 - FREEZE_BACKBONE_EPOCHS = 2`
-    → Hasil *Val Acc* tertinggi sebesar *89.77%*, memperlihatkan bahwa dengan jumlah *epoch* yang lebih banyak, model mampu mempelajari fitur dengan lebih mendalam tanpa mengalami overfitting, terutama karena lapisan awal tetap dibekukan selama beberapa *epoch* pertama untuk menjaga stabilitas pelatihan.
+    → Hasil *Val Acc* tertinggi sebesar *87.21%*, memperlihatkan bahwa dengan jumlah *epoch* yang lebih banyak, model mampu mempelajari fitur dengan lebih mendalam tanpa mengalami overfitting, terutama karena lapisan awal tetap dibekukan selama beberapa *epoch* pertama untuk menjaga stabilitas pelatihan.
 
 Secara keseluruhan, eksperimen ini menunjukkan bahwa *DenseNet* dengan *pretrained weights* memberikan hasil yang kompetitif dan bahkan melampaui performa *ResNet18* pada konfigurasi terbaik. Arsitektur yang padat dan efisien dalam memanfaatkan fitur antar-lapisan menjadikannya salah satu kandidat kuat untuk model klasifikasi citra medis yang memerlukan detail fitur tinggi.
+
 
