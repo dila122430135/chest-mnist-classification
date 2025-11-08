@@ -8,7 +8,7 @@ from model_resnet import ResNet18
 from utils import plot_training_history, visualize_random_val_predictions
 
 # --- Hyperparameter (sesuai permintaan) ---
-EPOCHS = 40
+EPOCHS = 30
 BATCH_SIZE = 32
 LEARNING_RATE = 1e-4
 PRETRAINED = True
